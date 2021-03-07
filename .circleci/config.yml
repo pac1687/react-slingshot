@@ -30,7 +30,7 @@ jobs:
       - restore_cache:
           keys:
             - "npm-packages"
-      - run: npm analyze
+      - run: npm audit
 workflows:
   my_workflow:
     jobs:
